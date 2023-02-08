@@ -6,4 +6,19 @@
 nav {
     background-color: #ff090c;
     color: #efefef;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+    margin-top: 20px;
 }
