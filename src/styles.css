@@ -1,11 +1,22 @@
+:root {
+    --white: #efefef;
+    --background: #ff090c;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr 0.5fr;
+    min-height: 100vh;
+}
+
 nav {
-    background-color: #ff090c;
-    color: #efefef;
+    background-color: var(--background);
+    color: var(--white);
 
     display: flex;
     flex-direction: column;
@@ -21,4 +32,24 @@ nav {
 
     gap: 40px;
     margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: var(--background);
+    color: var(--white);
+}
+
+.fa-github {
+    font-size: 24px;
+    color: white; /* prevent icon from going red on click */
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }
