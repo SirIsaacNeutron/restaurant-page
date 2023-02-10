@@ -1,6 +1,7 @@
 :root {
     --white: #efefef;
     --background: #ff090c;
+    --home-background: rgba(197, 197, 197, 0.6);
 }
 
 * {
@@ -33,8 +34,26 @@ nav {
     justify-content: space-between;
 }
 
-.home-content {
+#content {
+    display: flex;
+    flex-direction: column;
 
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--home-background);
+    max-width: 150px;
+
+    padding: 20px 40px;
+
+    border-radius: 15px;
+
+    gap: 20px;
 }
 
 .nav-links {

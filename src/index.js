@@ -26,8 +26,8 @@ function createNavBar() {
     nav.appendChild(navLinks)
 }
 
-function createHomePageContent() {
-    content.classList.add("home-content")
-}
+// function createHomePageContent() {
+//     content.classList.add("home-content")
+// }
 
-createHomePageContent()
+// createHomePageContent()
