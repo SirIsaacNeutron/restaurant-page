@@ -11,11 +11,11 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 6fr 0.5fr;
+    grid-template-rows: 1fr 4fr 0.5fr;
     min-height: 100vh;
 
     /* https://stackoverflow.com/questions/49927618/how-can-i-scale-background-image-for-mobile-using-css */
-    background: no-repeat url("./pizza.jpg");
+    background: no-repeat url("./images/pizza.jpg");
     background-size: cover;
 
     width: 100vw;
@@ -34,6 +34,27 @@ nav {
     justify-content: space-between;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.nav-link {
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: black;
+    cursor: pointer;
+
+    transform: translateY(-5px);
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -42,9 +63,10 @@ nav {
     align-items: center;
 }
 
-.home-content {
+.content-box {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     background-color: var(--home-background);
     max-width: 150px;
@@ -52,16 +74,32 @@ nav {
     padding: 20px 40px;
 
     border-radius: 15px;
-
-    gap: 20px;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
+.menu-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    gap: 40px;
-    margin-top: 20px;
+    gap: 20px;
+
+    background-color: var(--home-background);
+    max-width: 500px;
+
+    padding: 20px 40px;
+
+    border-radius: 15px;
+}
+
+.pizza-section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-img {
+    width: 10rem;
 }
 
 footer {
