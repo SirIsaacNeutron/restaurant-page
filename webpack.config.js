@@ -5,7 +5,8 @@ module.exports = {
     mode: "development",
     entry: {
         index: "./src/index.js",
-        menu: "./src/menu.js"
+        menu: "./src/menu.js",
+        contact: "./src/contact.js"
     },
     output: {
         filename: "[name].bundle.js",
@@ -15,7 +16,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Dev Restaurant",
+            title: "Pizza Palace",
             filename: "index.html",
             template: "src/template.html"
         }),
