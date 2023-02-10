@@ -10,6 +10,8 @@
 }
 
 body {
+    font-family: 'Lato', sans-serif;
+
     display: grid;
     grid-template-rows: 160px 5fr 100px;
     min-height: 100vh;
@@ -34,12 +36,18 @@ nav {
     justify-content: space-between;
 }
 
+nav h1 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 100;
+
+    font-size: 3rem;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
 
     gap: 40px;
-    margin-top: 20px;
     margin-bottom: 5px;
 }
 
