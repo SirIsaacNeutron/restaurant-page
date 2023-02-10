@@ -1,6 +1,6 @@
 // This applies CSS classes since webpack will basically put all of this CSS file
 // into a <style> tag
-import removeContent from "./removeContent"
+import removeContent, { makeLinkActive } from "./shared"
 import "./styles.css"
 
 const content = document.getElementById("content")
@@ -55,4 +55,5 @@ createHomePageContent()
 const homeLink = document.querySelector(".home-link")
 homeLink.addEventListener("click", () => {
     createHomePageContent()
+    makeLinkActive(".home-link")
 })

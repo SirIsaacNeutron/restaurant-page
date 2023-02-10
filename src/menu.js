@@ -1,4 +1,4 @@
-import removeContent from "./removeContent"
+import removeContent, { makeLinkActive } from "./shared"
 
 import Cheese from "./images/cheese_pizza.png"
 import Pepperoni from "./images/pepperoni_pizza.png"
@@ -96,4 +96,5 @@ export default function createMenu() {
 const menuLink = document.querySelector(".menu-link")
 menuLink.addEventListener("click", () => {
     createMenu()
+    makeLinkActive(".menu-link")
 })

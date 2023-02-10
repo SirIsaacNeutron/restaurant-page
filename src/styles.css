@@ -55,6 +55,10 @@ nav {
     transform: translateY(-5px);
 }
 
+.active-link {
+    border-bottom: 2px solid var(--white);
+}
+
 #content {
     display: flex;
     flex-direction: column;
