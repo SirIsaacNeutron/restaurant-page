@@ -1,2 +1,2 @@
 # restaurant-page
-A restaurant page for the Odin Project
+A pizza restaurant page I coded for [the Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page). This project was about primarily about learning how to use webpack. You can view the website at https://sirisaacneutron.github.io/restaurant-page/
