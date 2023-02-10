@@ -10,8 +10,15 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 5fr 0.5fr;
+    grid-template-rows: 1fr 6fr 0.5fr;
     min-height: 100vh;
+
+    /* https://stackoverflow.com/questions/49927618/how-can-i-scale-background-image-for-mobile-using-css */
+    background: no-repeat url(https://imageio.forbes.com/specials-images/imageserve/5f974a4f5210e336503abf92/0x0.jpg?format=jpg&width=1200);
+    background-size: cover;
+
+    width: 100vw;
+    background-position: center, center;
 }
 
 nav {
@@ -24,6 +31,10 @@ nav {
 
     padding: 30px;
     justify-content: space-between;
+}
+
+.home-content {
+
 }
 
 .nav-links {

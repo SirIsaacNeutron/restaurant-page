@@ -24,6 +24,10 @@ function createNavBar() {
     }
 
     nav.appendChild(navLinks)
-
-    content.appendChild(nav)
 }
+
+function createHomePageContent() {
+    content.classList.add("home-content")
+}
+
+createHomePageContent()
