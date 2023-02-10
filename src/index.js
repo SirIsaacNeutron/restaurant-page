@@ -26,8 +26,25 @@ function createNavBar() {
     nav.appendChild(navLinks)
 }
 
-// function createHomePageContent() {
-//     content.classList.add("home-content")
-// }
+function createHomePageContent() {
+    const homeContent = document.createElement("div")
+    homeContent.classList.add("home-content")
 
-// createHomePageContent()
+    const hcHeader = document.createElement("h2")
+    hcHeader.textContent = "Feast on 🍕 like a king!"
+
+    const p1 = document.createElement("p")
+    p1.textContent =
+        "We've been making pizzas with love since 2010. And we'd love for you to experience the best the pizza world has to offer."
+
+    const p2 = document.createElement("p")
+    p2.textContent = "Visit us in person, or order delivery!"
+
+    homeContent.appendChild(hcHeader)
+    homeContent.appendChild(p1)
+    homeContent.appendChild(p2)
+
+    content.appendChild(homeContent)
+}
+
+createHomePageContent()
